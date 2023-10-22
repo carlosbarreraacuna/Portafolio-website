@@ -10,12 +10,12 @@ const Footer = () => {
         {/* logo and description */}
         <div className="md:w-2/5 my-3">
           <h4 className="text-white font-bold text-2xl tracking-wide">
-            RAM MAHESHWARI
+            CARLOS BARRERA
           </h4>
           <p className="mt-5 text-sm leading-7 text-[#eee]">
-            A Frontend focused Web Developer building the Frontend of Websites
-            and Web Applications that leads to the success of the overall
-            product
+          Un desarrollador web centrado en el frontend que construye el diseño e interface de sitios web
+             y Aplicaciones Web escalables que conduzcan al éxito general del
+             producto
           </p>
         </div>
         {/* social icons */}
@@ -24,8 +24,8 @@ const Footer = () => {
             SOCIAL
           </h4>
           <div className='mt-5 flex gap-3'>
-            <a href="" className='ml-1'><img src={linkedinIcon} alt="" className='w-7 h-7'/></a>
-            <a href="" className='ml-1'><img src={githubIcon} alt="" className='w-7 h-7'/></a>
+            <a href="https://www.linkedin.com/in/carlosbarrera2/" className='ml-1'><img src={linkedinIcon} alt="" className='w-7 h-7'/></a>
+            <a href="https://github.com/carlosbarreraacuna/" className='ml-1'><img src={githubIcon} alt="" className='w-7 h-7'/></a>
             <a href="" className='ml-1'><img src={twitterIcon} alt="" className='w-7 h-7'/></a>
             <a href="" className='ml-1'><img src={blogIcon} alt="" className='w-7 h-7'/></a>
             <a href="" className='ml-1'><img src={youtubeIcon} alt="" className='w-7 h-7'/></a>
@@ -37,7 +37,7 @@ const Footer = () => {
 
       {/* copyright text */}
       <div>
-        <p className='md:my-10 py-10 md:py-0 text-sm leading-7 text-[#eee] text-center'>© Copyright 2023. Made by <a href="" className='underline'>Ram Maheshwari</a></p>
+        <p className='md:my-10 py-10 md:py-0 text-sm leading-7 text-[#eee] text-center'>© Copyright 2023. Hecho por <a href="" className='underline'>Carlos Barrera</a></p>
       </div>
     </div>
   );

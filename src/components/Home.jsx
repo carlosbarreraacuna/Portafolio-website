@@ -12,30 +12,33 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Home = () => {
+  let Links = [
+    { name: "Proyectos", link: "projects" },
+  ];
   return (
     <div className="hero my-8 md:py-8 px-7 relative" id="home">
       {/* hero info */}
       <div className="h-screen flex items-center justify-center">
-        <motion.div 
-        variants={fadeIn("up", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.7 }}
-        className="text-center md:w-1/2">
+        <motion.div
+          variants={fadeIn("up", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="text-center md:w-1/2">
           <h1 className="text-primary text-5xl font-extrabold tracking-wider mb-8">
-            HEY, I'M RAM MAHESHWARI
+            CARLOS BARRERA
           </h1>
           <TypeAnimation
             className="font-semibold text-transparent leading-10 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
             sequence={[
               // Same substring at the start will only be typed once, initially
-              "Designing for the Future, One Website at a Time.",
+              "Desarrollador de software.",
               1000,
-              "Designing for the Online Presence.",
+              "Frontend Developer.",
               1000,
-              "Designing for the Pixel Perfect Experiences.",
+              "Backend Developer.",
               1000,
-              "We Create, You Conquer.",
+              "Ingeniero de sistemas.",
               1000,
             ]}
             speed={50}
@@ -44,11 +47,9 @@ const Home = () => {
           />
           {/* hero info */}
           <p className="text-light text-xl my-8">
-            A Frontend focused Web Developer building the Frontend of Websites
-            and Web Applications that leads to the success of the overall
-            product
+            Desarrollador front end con experiencia en PHP, Laravel, CodeIgniter3, Tailwind CSS y Bootstrap. Creo interfaces web innovadoras y funcionales con HTML, CSS y JavaScript.
           </p>
-          <button className="btn py-4 px-16">PROJECTS</button>
+          <a href="" className="btn py-4 px-16">PROYECTOS</a>
 
 
         </motion.div>
@@ -57,7 +58,7 @@ const Home = () => {
       <div className="bg-white w-20 rounded py-1 px-2 absolute left-0 top-48 hidden md:block">
         <div className="my-1">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/carlosbarrera2/"
             className="p-3 hover:bg-slate-400 block rounded transition-all duration-500"
           >
             <img src={LinkedIn} alt="" className="w-10 h-10" />
@@ -81,23 +82,16 @@ const Home = () => {
         </div>
         <div className="my-1">
           <a
-            href="#"
+            href="https://github.com/carlosbarreraacuna/"
             className="p-3 hover:bg-slate-400 block rounded transition-all duration-500"
           >
             <img src={GitHub} alt="" className="w-10 h-10" />
           </a>
         </div>
-        <div className="my-1">
-          <a
-            href="#"
-            className="p-3 hover:bg-slate-400 block rounded transition-all duration-500"
-          >
-            <img src={Books} alt="" className="w-10 h-10" />
-          </a>
-        </div>
+       
       </div>
 
- 
+
     </div>
   );
 };

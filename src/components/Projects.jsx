@@ -10,7 +10,7 @@ import { fadeIn } from "../variants";
 const Projects = () => {
     return (
         <div className='max-w-7xl mx-auto md:py-8 px-7' id="projects">
-            <Headline title={'PROJECTS'} subtitle={'Here you will find some of the personal and clients projects that I created with each project containing its own case study'}/>
+            <Headline title={'PROYECTOS'} subtitle={'Here you will find some of the personal and clients projects that I created with each project containing its own case study'}/>
 
             <div>
                 {projects.map((project) => <div key={project.id}>
@@ -26,7 +26,7 @@ const Projects = () => {
                         <div className="md:w-10/12 text-center md:text-left px-2">
                         <h4 className="text-2xl font-bold mb-6">{project.name}</h4>
                         <p className="text-lg text-[#666] leading-6 mb-6">{project.description}</p>
-                        <button className="btn py-3 px-7">Case Study</button>
+                        <a href={project.url} className="btn py-3 px-7">Mas info.</a>
                         </div>
                     </motion.div>
                 </div>)}

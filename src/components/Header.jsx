@@ -9,10 +9,10 @@ import profileImg from '../assets/profile-pic.png'
 
 const Header = () => {
   let Links = [
-    { name: "Home", link: "home" },
-    { name: "About me", link: "about" },
-    { name: "Projects", link: "projects" },
-    { name: "Contact", link: "contact" },
+    { name: "Inicio", link: "home" },
+    { name: "Sobre mi", link: "about" },
+    { name: "Proyectos", link: "projects" },
+    { name: "Contactame", link: "contact" },
   ];
   let [open, setOpen] = useState(false);
 
@@ -22,7 +22,7 @@ const Header = () => {
         {/* logo section */}
         <div className="font-bold text-2xl tracking-wide cursor-pointer flex items-center gap-1">
             <img src={profileImg} alt="" className="md:w-12 md:h-12 w-10 h-10"/>
-          <span className="text-primary hover:text-secondary md:ml-3 ml-2">RAM MAHESHWARI</span>
+          <span className="text-primary hover:text-secondary md:ml-3 ml-2">CARLOS BARRERA</span>
         </div>
         {/* Menu icon */}
         <div

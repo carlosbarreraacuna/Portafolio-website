@@ -16,40 +16,40 @@ const Contact = () => {
       id="contact"
     >
       <Headline
-        title={"CONTACT"}
+        title={"CONTACTAME"}
         subtitle={
-          "Feel free to Contact me by submitting the form below and I will get back to you as soon as possible"
+          "No dude en ponerse en contacto conmigo enviando el siguiente formulario y me comunicaré con usted lo antes posible."
         }
       />
 
       <div className="md:w-2/3 mx-auto bg-white md:px-16 px-8 py-8 rounded mb-32">
         <form>
-          <label htmlFor="name">Name: </label>
+          <label htmlFor="name">Nombre: </label>
           <input
             type="text"
             name="name"
             id="name"
-            placeholder="Enter Your Name"
+            placeholder="Ingresa tu nombre"
             className="p-5"
           />
-          <label htmlFor="email">Email: </label>
+          <label htmlFor="email">Correo electronico: </label>
           <input
             type="email"
             name="email"
             id="email"
-            placeholder="Enter Your Email"
+            placeholder="Ingresa tu correo electronico"
             className="p-5"
           />
-          <label htmlFor="message">Message: </label>
+          <label htmlFor="message">Mensaje: </label>
           <textarea
             name="message"
             id="message"
             cols="80"
             rows="10"
-            placeholder="Enter Your Message"
+            placeholder="Ingresa tu mensaje"
             className="p-5 mb-8"
           ></textarea>
-          <button className="btn px-14 py-4 shadow-sm">Submit</button>
+          <button className="btn px-14 py-4 shadow-sm">Enviar</button>
         </form>
       </div>
     </motion.div>
